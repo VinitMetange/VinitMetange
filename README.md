@@ -48,6 +48,7 @@ AI Product Strategy             → From roadmap to ROI
 | [🤖 agentic-ai-context-engineering](https://github.com/VinitMetange/agentic-ai-context-engineering) | Production guide: 5-layer context anatomy, compression pipeline, multi-agent handoff | LangGraph, Python, LLMs |
 | [🔍 rag-knowledge-assistant](https://github.com/VinitMetange/rag-knowledge-assistant) | RAG-based enterprise knowledge assistant reducing support cost by 20% | LangChain, FastAPI, Python |
 | [🏥 ai-insurance-claims-agent](https://github.com/VinitMetange/ai-insurance-claims-agent) | ISB Capstone: Multi-agent insurance claims processor with fraud detection | LangGraph, GPT-4o, RAG |
+| [🎬 n8n-content-creation-pipeline](https://github.com/VinitMetange/n8n-content-creation-pipeline) | End-to-end AI content pipeline: Perplexity research → ChatGPT script → HeyGen video → YouTube upload | n8n, Perplexity, ChatGPT, HeyGen |
 
 ---
 
@@ -56,7 +57,7 @@ AI Product Strategy             → From roadmap to ROI
 | Repository | Description | Type |
 |---|---|---|
 | [⚡ n8n-ai-workflows-collection](https://github.com/VinitMetange/n8n-ai-workflows-collection) | AI agents, RAG bots & business automation workflows in n8n | n8n Practice |
-| [🤖 GenAI_Agents](https://github.com/VinitMetange/GenAI_Agents) | Tutorials & implementations for GenAI agent techniques (forked) | Fork — NirDiamant |
+| [🤖 GenAI\_Agents](https://github.com/VinitMetange/GenAI_Agents) | Tutorials & implementations for GenAI agent techniques (forked) | Fork — NirDiamant |
 | [💡 awesome-llm-apps](https://github.com/VinitMetange/awesome-llm-apps) | Collection of LLM apps with AI Agents and RAG (forked) | Fork — Shubhamsaboo |
 | [🌐 langgraph](https://github.com/VinitMetange/langgraph) | LangGraph framework — building resilient language agents as graphs (forked) | Fork — LangChain AI |
 
@@ -75,12 +76,18 @@ AI Product Strategy             → From roadmap to ROI
 
 ```python
 ai_stack = {
-    "Agents":     ["LangGraph", "LangChain", "AutoGen", "CrewAI"],
-    "LLMs":        ["GPT-4o", "Claude 3.5", "Llama 3", "Gemini"],
-    "RAG":         ["FAISS", "Pinecone", "Chroma", "Weaviate"],
-    "Automation":  ["n8n", "FastAPI", "Airflow"],
-    "Cloud":       ["AWS Bedrock", "SageMaker", "Lambda"],
-    "Monitoring":  ["LangSmith", "Prometheus", "Grafana"]
+    "Agents": ["LangGraph", "LangChain", "AutoGen", "CrewAI", "Strands", "AWS Agent Core"],
+    "LLMs": ["GPT-4o", "Claude 3.5", "Llama 3", "Gemini"],
+    "RAG": ["FAISS", "Pinecone", "Chroma", "Weaviate", "pgvector", "OpenSearch"],
+    "Automation": ["n8n", "FastAPI", "Airflow"],
+    "Dev Tools": ["Claude Code", "GitHub Copilot", "Cursor"],
+    "Cloud": {
+        "AWS": ["Bedrock", "SageMaker", "Lambda", "EKS", "S3", "Agent Core"],
+        "GCP": ["Vertex AI", "BigQuery", "Cloud Run", "GKE"],
+        "Azure": ["Azure OpenAI", "Azure ML", "AKS", "Cosmos DB"],
+        "Enterprise": ["Netcracker Enterprise Platform", "Nokia SDL", "OSS/BSS Cloud"]
+    },
+    "Monitoring": ["LangSmith", "Prometheus", "Grafana"]
 }
 ```
 
@@ -109,5 +116,4 @@ ai_stack = {
 <div align="center">
 
 *Building AI products that matter. Open to AI PM and Product Leadership roles.*
-
 </div>
