@@ -17,7 +17,7 @@
 
 I'm an **AI Product Leader with 18+ years** of experience building and scaling intelligent, cloud-native platforms that drive measurable business impact.
 
-I specialize in taking AI from concept to production — designing **GenAI-powered products** (LLMs, RAG, Agentic systems) that solve real customer problems and deliver ROI.
+I specialize in taking AI from concept to production designing **GenAI-powered products** (LLMs, RAG, Agentic systems) that solve real customer problems and deliver ROI.
 
 - 🚀 **30%+ cost reduction** through AI automation at Netcracker
 - 📈 **40% revenue growth** via platform modernization at Nokia
