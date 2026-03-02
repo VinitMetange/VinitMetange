@@ -101,6 +101,8 @@ ai_stack = {
 - 💼 **LinkedIn:** [linkedin.com/in/vinit-metange](https://linkedin.com/in/vinit-metange)
 - 📚 **Articles:** [LinkedIn Articles](https://www.linkedin.com/in/vinit-metange/recent-activity/articles/)
 - 🏅 **Certifications:** [View 56+ Certs](https://github.com/VinitMetange/professional-certifications)
+- 🏆 **Awards:** [View Recognition Catalog](https://github.com/VinitMetange/awards-and-recognition)
+- 🎤 **Presentations:** [View Talks & Webinars](https://github.com/VinitMetange/presentations-and-talks)
 
 ---
 
