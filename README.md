@@ -48,7 +48,8 @@ AI Product Strategy             → From roadmap to ROI
 | [🤖 agentic-ai-context-engineering](https://github.com/VinitMetange/agentic-ai-context-engineering) | Production guide: 5-layer context anatomy, compression pipeline, multi-agent handoff | LangGraph, Python, LLMs |
 | [🔍 rag-knowledge-assistant](https://github.com/VinitMetange/rag-knowledge-assistant) | RAG-based enterprise knowledge assistant reducing support cost by 20% | LangChain, FastAPI, Python |
 | [🏥 ai-insurance-claims-agent](https://github.com/VinitMetange/ai-insurance-claims-agent) | ISB Capstone: Multi-agent insurance claims processor with fraud detection | LangGraph, GPT-4o, RAG |
-| [🎬 n8n-content-creation-pipeline](https://github.com/VinitMetange/n8n-content-creation-pipeline) | End-to-end AI content pipeline: Perplexity research → ChatGPT script → HeyGen video → YouTube upload | n8n, Perplexity, ChatGPT, HeyGen |
+| [🎬 n8n-content-creation-pipeline](https://github.com/VinitMetange/n8n-content-creation-pipeline) | 
+| [📊 ai-trading-agent](https://github.com/VinitMetange/ai-trading-agent) | AI-powered trading agent: 500-stock screener, multi-signal technical analysis, sentiment scoring, and automated execution | LangChain, Python, TA-Lib |End-to-end AI content pipeline: Perplexity research → ChatGPT script → HeyGen video → YouTube upload | n8n, Perplexity, ChatGPT, HeyGen |
 
 ---
 
