@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1584">
+<title>LinkedIn Banner - Vinit Metange</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1584px;
+    height: 396px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    background: #070910;
+  }
+
+  .banner {
+    width: 1584px;
+    height: 396px;
+    position: relative;
+    background: linear-gradient(135deg, #070910 0%, #0d1220 40%, #070f1a 100%);
+    overflow: hidden;
+  }
+
+  /* Grid lines background */
+  .grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(79,158,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(79,158,255,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* Glowing orbs */
+  .orb1 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,200,150,0.12) 0%, transparent 70%);
+    top: -150px;
+    right: 100px;
+    pointer-events: none;
+  }
+
+  .orb2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(79,158,255,0.10) 0%, transparent 70%);
+    bottom: -150px;
+    left: 300px;
+    pointer-events: none;
+  }
+
+  .orb3 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(155,114,255,0.08) 0%, transparent 70%);
+    top: -50px;
+    left: 600px;
+    pointer-events: none;
+  }
+
+  /* Left accent line */
+  .accent-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #00c896, #4f9eff, transparent);
+  }
+
+  /* Main content */
+  .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    gap: 60px;
+  }
+
+  /* Left section - name & title */
+  .left {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #00c896;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: #00c896;
+    border-radius: 2px;
+  }
+
+  .name {
+    font-size: 56px;
+    font-weight: 800;
+    color: #e2e8f4;
+    line-height: 1.0;
+    letter-spacing: -1px;
+  }
+
+  .name span {
+    color: #00c896;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #8a9abf;
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+
+  .title strong {
+    color: #c5d2ea;
+    font-weight: 600;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .tag {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.04em;
+  }
+
+  .tag-green {
+    background: rgba(0,200,150,0.12);
+    border: 1px solid rgba(0,200,150,0.3);
+    color: #00c896;
+  }
+
+  .tag-blue {
+    background: rgba(79,158,255,0.10);
+    border: 1px solid rgba(79,158,255,0.25);
+    color: #4f9eff;
+  }
+
+  .tag-purple {
+    background: rgba(155,114,255,0.10);
+    border: 1px solid rgba(155,114,255,0.25);
+    color: #9b72ff;
+  }
+
+  .tag-gold {
+    background: rgba(245,197,66,0.10);
+    border: 1px solid rgba(245,197,66,0.25);
+    color: #f5c542;
+  }
+
+  /* Divider */
+  .divider {
+    width: 1px;
+    height: 220px;
+    background: linear-gradient(180deg, transparent, rgba(79,158,255,0.2), transparent);
+    flex-shrink: 0;
+  }
+
+  /* Right section - stats */
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .right-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #4f9eff;
+    margin-bottom: 4px;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .stat-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+
+  .stat-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .stat-label {
+    font-size: 10px;
+    color: #5a6a84;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+  }
+
+  .num-green { color: #00c896; }
+  .num-blue  { color: #4f9eff; }
+  .num-gold  { color: #f5c542; }
+  .num-purple{ color: #9b72ff; }
+  .num-white { color: #e2e8f4; }
+  .num-teal  { color: #2dd4bf; }
+
+  .products-row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .product-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 12px;
+    color: #c5d2ea;
+  }
+
+  .product-pill .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #00c896;
+    flex-shrink: 0;
+  }
+
+  .product-pill .prod-url {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: #00c896;
+    margin-left: 2px;
+  }
+
+  /* Bottom bar */
+  .bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #00c896, #4f9eff, #9b72ff, #f5c542);
+    opacity: 0.6;
+  }
+
+  /* Claude badge */
+  .claude-badge {
+    position: absolute;
+    top: 24px;
+    right: 72px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(245,197,66,0.2);
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+  }
+
+  .claude-label {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #f5c542;
+    font-weight: 600;
+  }
+
+  .claude-verdict {
+    font-size: 11px;
+    color: #8a9abf;
+  }
+
+  .claude-verdict strong {
+    color: #f5c542;
+  }
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="grid"></div>
+  <div class="orb1"></div>
+  <div class="orb2"></div>
+  <div class="orb3"></div>
+  <div class="accent-line"></div>
+
+  <div class="content">
+    <!-- Left: Name & Title -->
+    <div class="left">
+      <div class="eyebrow">AI Product Leader &amp; Solo Founder</div>
+      <div class="name">Vinit <span>Metange</span></div>
+      <div class="title"><strong>18 Years Enterprise PM</strong> &nbsp;·&nbsp; 3 Production AI Products &nbsp;·&nbsp; Bengaluru</div>
+      <div class="tags">
+        <span class="tag tag-green">LLMs &amp; RAG</span>
+        <span class="tag tag-blue">Agentic AI</span>
+        <span class="tag tag-purple">Claude Code</span>
+        <span class="tag tag-gold">SaaS &amp; Cloud</span>
+        <span class="tag tag-green">Indian FinTech</span>
+        <span class="tag tag-blue">Open to AI PM Roles</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Right: Stats & Products -->
+    <div class="right">
+      <div class="right-title">Production Portfolio &mdash; Built Solo</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-num num-green">4,591</div>
+          <div class="stat-label">Tests Passing · 0 Errors</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num num-blue">11</div>
+          <div class="stat-label">AI Specialist Agents</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num num-gold">3</div>
+          <div class="stat-label">Live AI Products</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num num-purple">20</div>
+          <div class="stat-label">AI Operating Team Agents</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num num-teal">54</div>
+          <div class="stat-label">RLS-Protected DB Tables</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num num-white">480x</div>
+          <div class="stat-label">Faster than Traditional Teams</div>
+        </div>
+      </div>
+      <div class="products-row">
+        <div class="product-pill"><span class="dot"></span> Virasat &mdash; Financial Intelligence <span class="prod-url">virasat.co.in</span></div>
+        <div class="product-pill"><span class="dot"></span> ObserveIQ &mdash; AI Observability SDK <span class="prod-url">observeiq.io</span></div>
+        <div class="product-pill"><span class="dot"></span> Arthavit &mdash; WhatsApp Expense AI <span class="prod-url">arthavit.in</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Claude Assessment Badge -->
+  <div class="claude-badge">
+    <span class="claude-label">Anthropic Claude Assessment</span>
+    <span class="claude-verdict">Top <strong>1%</strong> AI PM in India &nbsp;·&nbsp; Indian FinTech <strong>10/10</strong></span>
+  </div>
+
+  <div class="bottom-bar"></div>
+</div>
+</body>
+</html>
