@@ -25,7 +25,6 @@
     overflow: hidden;
   }
 
-  /* Grid lines background */
   .grid {
     position: absolute;
     inset: 0;
@@ -35,7 +34,6 @@
     background-size: 60px 60px;
   }
 
-  /* Glowing orbs */
   .orb1 {
     position: absolute;
     width: 500px;
@@ -69,7 +67,6 @@
     pointer-events: none;
   }
 
-  /* Left accent line */
   .accent-line {
     position: absolute;
     left: 0;
@@ -79,7 +76,6 @@
     background: linear-gradient(180deg, transparent, #00c896, #4f9eff, transparent);
   }
 
-  /* Main content */
   .content {
     position: absolute;
     inset: 0;
@@ -89,7 +85,6 @@
     gap: 60px;
   }
 
-  /* Left section - name & title */
   .left {
     flex: 0 0 auto;
     display: flex;
@@ -181,7 +176,12 @@
     color: #f5c542;
   }
 
-  /* Divider */
+  .tag-teal {
+    background: rgba(45,212,191,0.10);
+    border: 1px solid rgba(45,212,191,0.25);
+    color: #2dd4bf;
+  }
+
   .divider {
     width: 1px;
     height: 220px;
@@ -189,7 +189,6 @@
     flex-shrink: 0;
   }
 
-  /* Right section - stats */
   .right {
     flex: 1;
     display: flex;
@@ -234,12 +233,12 @@
     letter-spacing: 0.04em;
   }
 
-  .num-green { color: #00c896; }
-  .num-blue  { color: #4f9eff; }
-  .num-gold  { color: #f5c542; }
-  .num-purple{ color: #9b72ff; }
-  .num-white { color: #e2e8f4; }
-  .num-teal  { color: #2dd4bf; }
+  .num-green  { color: #00c896; }
+  .num-blue   { color: #4f9eff; }
+  .num-gold   { color: #f5c542; }
+  .num-purple { color: #9b72ff; }
+  .num-white  { color: #e2e8f4; }
+  .num-teal   { color: #2dd4bf; }
 
   .products-row {
     display: flex;
@@ -273,7 +272,6 @@
     margin-left: 2px;
   }
 
-  /* Bottom bar */
   .bottom-bar {
     position: absolute;
     bottom: 0;
@@ -284,7 +282,6 @@
     opacity: 0.6;
   }
 
-  /* Claude badge */
   .claude-badge {
     position: absolute;
     top: 24px;
@@ -326,30 +323,30 @@
   <div class="accent-line"></div>
 
   <div class="content">
-    <!-- Left: Name & Title -->
     <div class="left">
-      <div class="eyebrow">AI Product Leader &amp; Solo Founder</div>
+      <div class="eyebrow">AI Product Leader &amp; Product Management</div>
       <div class="name">Vinit <span>Metange</span></div>
-      <div class="title"><strong>18 Years Enterprise PM</strong> &nbsp;·&nbsp; 3 Production AI Products &nbsp;·&nbsp; Bengaluru</div>
+      <div class="title"><strong>18 Years Enterprise PM</strong> &nbsp;&middot;&nbsp; Nokia &middot; Netcracker &middot; IBM &nbsp;&middot;&nbsp; Bengaluru</div>
       <div class="tags">
         <span class="tag tag-green">LLMs &amp; RAG</span>
         <span class="tag tag-blue">Agentic AI</span>
         <span class="tag tag-purple">Claude Code</span>
-        <span class="tag tag-gold">SaaS &amp; Cloud</span>
-        <span class="tag tag-green">Indian FinTech</span>
-        <span class="tag tag-blue">Open to AI PM Roles</span>
+        <span class="tag tag-gold">SaaS</span>
+        <span class="tag tag-blue">AI Products</span>
+        <span class="tag tag-teal">Cloud Platforms</span>
+        <span class="tag tag-green">Telecom 5G</span>
+        <span class="tag tag-purple">OSS BSS</span>
       </div>
     </div>
 
     <div class="divider"></div>
 
-    <!-- Right: Stats & Products -->
     <div class="right">
-      <div class="right-title">Production Portfolio &mdash; Built Solo</div>
+      <div class="right-title">Production Portfolio &mdash; Built &amp; Shipped</div>
       <div class="stats-grid">
         <div class="stat-card">
           <div class="stat-num num-green">4,591</div>
-          <div class="stat-label">Tests Passing · 0 Errors</div>
+          <div class="stat-label">Tests Passing &middot; 0 Errors</div>
         </div>
         <div class="stat-card">
           <div class="stat-num num-blue">11</div>
@@ -364,8 +361,8 @@
           <div class="stat-label">AI Operating Team Agents</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num num-teal">54</div>
-          <div class="stat-label">RLS-Protected DB Tables</div>
+          <div class="stat-num num-teal">18+</div>
+          <div class="stat-label">Years Enterprise PM</div>
         </div>
         <div class="stat-card">
           <div class="stat-num num-white">480x</div>
@@ -380,10 +377,9 @@
     </div>
   </div>
 
-  <!-- Claude Assessment Badge -->
   <div class="claude-badge">
     <span class="claude-label">Anthropic Claude Assessment</span>
-    <span class="claude-verdict">Top <strong>1%</strong> AI PM in India &nbsp;·&nbsp; Indian FinTech <strong>10/10</strong></span>
+    <span class="claude-verdict">Top <strong>1%</strong> AI PM in India &nbsp;&middot;&nbsp; Agentic Architecture <strong>9/10</strong></span>
   </div>
 
   <div class="bottom-bar"></div>
