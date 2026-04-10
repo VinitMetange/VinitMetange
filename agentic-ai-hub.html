@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agentic AI Hub - Production-Grade Resource by Vinit Metange</title>
+<meta name="description" content="Comprehensive guide to building production agentic AI systems - model pricing, RAG strategies, multi-agent architectures, safety & more">
+<style>
+:root {
+  --bg: #0a0e17;
+  --surface: #131824;
+  --text1: #e2e8f4;
+  --text2: #8a9abf;
+  --green: #00c896;
+  --blue: #4f9eff;
+}
+body { font-family: -apple-system, sans-serif; background: var(--bg); color: var(--text1); margin: 0; padding: 20px; }
+.container { max-width: 1200px; margin: 0 auto; }
+h1 { font-size: 48px; margin: 40px 0 20px; }
+.hero { text-align: center; padding: 60px 20px; }
+.hero h1 { color: var(--green); }
+.section { margin: 60px 0; padding: 40px; background: var(--surface); border-radius: 12px; }
+.card { background: rgba(255,255,255,0.03); padding: 24px; border-radius: 8px; margin: 16px 0; }
+table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="hero">
+<h1>🤖 Agentic AI Hub</h1>
+<p style="font-size: 20px; color: var(--text2);">Production-grade patterns for building autonomous AI systems</p>
+<p>Curated by <strong>Vinit Metange</strong> | AI Product Leader | Claude Code Certified</p>
+</div>
+
+<div class="section">
+<h2>📊 Model Pricing Reference</h2>
+<table>
+<tr><th>Model</th><th>Input $/M</th><th>Output $/M</th><th>Context</th><th>Best For</th></tr>
+<tr><td>Claude Haiku 3.5</td><td>$0.80</td><td>$4.00</td><td>200K</td><td>Classification, routing</td></tr>
+<tr><td>Claude Sonnet 4</td><td>$3.00</td><td>$15.00</td><td>200K</td><td>Production tasks, agents</td></tr>
+<tr><td>Claude Opus 4</td><td>$15.00</td><td>$75.00</td><td>200K</td><td>Complex reasoning</td></tr>
+<tr><td>GPT-4o</td><td>$2.50</td><td>$10.00</td><td>128K</td><td>General purpose</td></tr>
+</table>
+</div>
+
+<div class="section">
+<h2>🎯 Top Cost Reduction Strategies</h2>
+<div class="card">
+<h3>1. Model Routing (10x savings)</h3>
+<p>Route simple tasks to Haiku ($0.80/M), complex to Sonnet ($3/M), critical to Opus ($15/M)</p>
+</div>
+<div class="card">
+<h3>2. Prompt Caching (90% off)</h3>
+<p>Cache system prompts - reduces input costs by 90% on repeated calls</p>
+</div>
+<div class="card">
+<h3>3. Batch API (50% off)</h3>
+<p>Use for async workloads - evals, reports, bulk analysis</p>
+</div>
+</div>
+
+<div class="section">
+<h2>✅ Pre-Production Agent Checklist</h2>
+<div class="card">
+<input type="checkbox"> Context management - rolling summarization at 80% limit<br>
+<input type="checkbox"> Iteration budget - hard max on LLM calls enforced<br>
+<input type="checkbox"> Tool error handling - retry with exponential backoff<br>
+<input type="checkbox"> Model version pinned - not using 'latest'<br>
+<input type="checkbox"> Golden eval set - 50+ test cases verified<br>
+<input type="checkbox"> Output validation - schema validation with auto-retry<br>
+<input type="checkbox"> Safety evals - adversarial test suite passing<br>
+<input type="checkbox"> Observability - traces & logs to monitoring platform<br>
+<input type="checkbox"> Cost limits - per-request budget enforced<br>
+<input type="checkbox"> PII handling - no PII in logs or memory<br>
+</div>
+</div>
+
+<div class="section">
+<h2>🔍 RAG Quality Metrics</h2>
+<table>
+<tr><th>Metric</th><th>What it Measures</th><th>Target</th></tr>
+<tr><td>Retrieval Precision@K</td><td>Fraction of top-K chunks relevant</td><td>>0.70</td></tr>
+<tr><td>Retrieval Recall@K</td><td>Fraction of relevant docs in top-K</td><td>>0.80</td></tr>
+<tr><td>Faithfulness</td><td>Claims grounded in context</td><td>>0.85</td></tr>
+<tr><td>Answer Relevance</td><td>Answer addresses question</td><td>>0.80</td></tr>
+</table>
+</div>
+
+<div class="section">
+<h2>🏗️ Multi-Agent Topologies</h2>
+<div class="card">
+<h3>Orchestrator → Sub-Agent (Most Common)</h3>
+<p>One orchestrator delegates to specialized sub-agents. Best for complex tasks with clear sub-tasks.</p>
+</div>
+<div class="card">
+<h3>Generator → Critic Loop</h3>
+<p>Generator creates, critic evaluates, iterate. Excellent for code review, content generation.</p>
+</div>
+<div class="card">
+<h3>Blackboard (Shared State)</h3>
+<p>Agents read/write to shared store. Best for async pipelines, long-running tasks.</p>
+</div>
+</div>
+
+<div class="section">
+<h2>🛡️ Safety & Security</h2>
+<div class="card">
+<h3>Prompt Injection Defense</h3>
+<p>Sanitize tool outputs, use structural delimiters, implement least privilege, monitor for anomalies.</p>
+</div>
+<div class="card">
+<h3>Human-in-the-Loop</h3>
+<p>Always require approval for: sending external emails, deleting data, financial transactions, public posts.</p>
+</div>
+</div>
+
+<div class="section">
+<h2>📈 Production Health Metrics</h2>
+<table>
+<tr><th>Metric</th><th>Frequency</th><th>Alert Threshold</th></tr>
+<tr><td>LLM Judge Quality Score</td><td>Daily</td><td>Drop >10% vs baseline</td></tr>
+<tr><td>p95 Latency</td><td>Continuous</td><td>Doubles vs baseline</td></tr>
+<tr><td>User Thumbs-Down Rate</td><td>Daily</td><td>>20% week-over-week</td></tr>
+<tr><td>Safety Guardrail Trigger</td><td>Continuous</td><td>>0.1% of requests</td></tr>
+</table>
+</div>
+
+<div class="section" style="text-align: center; background: linear-gradient(135deg, #00c896 0%, #4f9eff 100%); color: #000;">
+<h2>🚀 Built by Vinit Metange</h2>
+<p><strong>AI Product Leader</strong> | 18+ Years Enterprise PM | Claude Code Certified</p>
+<p>Nokia · Netcracker · IBM · Wipro · Bengaluru</p>
+<p>🎓 Kellogg's Northwestern (PGP Product Management) · ISB (Leadership with AI)</p>
+<p><a href="https://github.com/VinitMetange" style="color: #000; font-weight: bold;">GitHub</a> | 
+<a href="https://linkedin.com/in/vinit-metange" style="color: #000; font-weight: bold;">LinkedIn</a> | 
+<a href="https://virasat.co.in" style="color: #000; font-weight: bold;">Virasat</a></p>
+</div>
+
+</div>
+</body>
+</html>
