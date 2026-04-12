@@ -179,7 +179,7 @@ Shared state: `TICKETS.md` · `AGENTLOG.md` · `ESCALATIONS.md` · `WEEKLYDIGEST
 
 - 💼 [LinkedIn](https://linkedin.com/in/vinit-metange)
 - 🌐 [Virasat — virasat.co.in](https://virasat.co.in)
-- 🔍 [ObserveIQ — observeiq.io](https://obsrvai.com)
+- 🔍 [ObserveAI — observeiq.io](https://obsrvai.com)
 - 💬 [Arthavit — arthavit.in](https://arthavit.in)
 - 📧 vinit.metange30@gmail.com
 
