@@ -85,10 +85,10 @@ I'm an **AI Product Leader with 18+ years** of experience building and scaling i
 
 ---
 
-### 🔍 [ObserveIQ](https://observeiq.io) — AI Observability & BI Platform · Published npm SDK
+### 🔍 [Obsrvai](https://obsrvai.com) — AI Observability & BI Platform · Published npm SDK
 > `Turborepo` · `Fastify` · `TimescaleDB` · `Redis` · `Next.js 14` · `Anthropic Claude`
 
-- Published npm SDK (`observeiq-sdk`) — wraps Anthropic + OpenAI for auto-capture of tokens, cost, latency, quality, hallucinations. **50 models** supported
+- Published npm SDK (`obsrvai-sdk`) — wraps Anthropic + OpenAI for auto-capture of tokens, cost, latency, quality, hallucinations. **50 models** supported
 - Full agent session tracing: tool calls, RAG retrieval, memory reads/writes, multi-agent coordination
 - Multi-tenant architecture with monthly-partitioned TimescaleDB, SHA-256 API key auth
 - 11 PDF report types including founder and investor reports. Self-hostable via Docker Compose
@@ -129,7 +129,7 @@ Shared state: `TICKETS.md` · `AGENTLOG.md` · `ESCALATIONS.md` · `WEEKLYDIGEST
 | Repository | Description | Stack | Status |
 |---|---|---|---|
 | [🏦 Virasat](https://github.com/VinitMetange/Virasat) | Financial intelligence platform for Indian families — 11 AI agents, 4,591 tests, WhatsApp agent | Next.js 14, TypeScript, Supabase, Claude | 🟢 Live |
-| [🔍 ObserveIQ](https://github.com/VinitMetange/ObserveIQ) | Complete AI observability & BI platform, published npm SDK | Turborepo, Fastify, TimescaleDB, Claude | 🟢 Live |
+| [🔍 Obsrvai](https://github.com/VinitMetange/obsrvai) | Complete AI observability & BI platform, published npm SDK | Turborepo, Fastify, TimescaleDB, Claude | 🟢 Live |
 | [💬 spendwise-ai-agent](https://github.com/VinitMetange/spendwise-ai-agent) | AI-powered expense tracking & event management via WhatsApp, Web & App | TypeScript, LangGraph | 🟡 Active |
 | [📘 ai-product-blueprint](https://github.com/VinitMetange/ai-product-blueprint) | Battle-tested patterns for building production AI products — 62 slash commands, 20-agent team | Docs, Python | 🆕 New |
 | [🤖 agentic-ai-context-engineering](https://github.com/VinitMetange/agentic-ai-context-engineering) | Production guide: 5-layer context anatomy, memory tiers, multi-agent handoff | LangGraph, Python | ✅ Public |
@@ -179,7 +179,7 @@ Shared state: `TICKETS.md` · `AGENTLOG.md` · `ESCALATIONS.md` · `WEEKLYDIGEST
 
 - 💼 [LinkedIn](https://linkedin.com/in/vinit-metange)
 - 🌐 [Virasat — virasat.co.in](https://virasat.co.in)
-- 🔍 [ObserveIQ — observeiq.io](https://observeiq.io)
+- 🔍 [ObserveIQ — observeiq.io](https://obsrvai.com)
 - 💬 [Arthavit — arthavit.in](https://arthavit.in)
 - 📧 vinit.metange30@gmail.com
 
