@@ -8,7 +8,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-vinit--metange-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/vinit-metange)
 [![Location](https://img.shields.io/badge/Location-Bengaluru%2C%20India-FF6B35?style=for-the-badge&logo=google-maps)](https://linkedin.com/in/vinit-metange)
 [![Virasat](https://img.shields.io/badge/🏦_Virasat-Live_in_Production-00C896?style=for-the-badge)](https://virasat.co.in)
-[![ObserveIQ](https://img.shields.io/badge/🔍_ObserveIQ-Live_in_Production-4F9EFF?style=for-the-badge)](https://observeiq.io)
+[![ObsrvAI](https://img.shields.io/badge/🔍_ObsrvAI-Live_in_Production-4F9EFF?style=for-the-badge)](https://obsrvai.com)
 [![Open to Work](https://img.shields.io/badge/Open%20to-AI%20PM%20Roles-00C851?style=for-the-badge)](https://linkedin.com/in/vinit-metange)
 
 </div>
@@ -179,7 +179,7 @@ Shared state: `TICKETS.md` · `AGENTLOG.md` · `ESCALATIONS.md` · `WEEKLYDIGEST
 
 - 💼 [LinkedIn](https://linkedin.com/in/vinit-metange)
 - 🌐 [Virasat — virasat.co.in](https://virasat.co.in)
-- 🔍 [ObserveAI — observeiq.io](https://obsrvai.com)
+- 🔍 [ObserveAI — obsrvai.com](https://obsrvai.com)
 - 💬 [Arthavit — arthavit.in](https://arthavit.in)
 - 📧 vinit.metange30@gmail.com
 
